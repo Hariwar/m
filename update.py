@@ -79,11 +79,11 @@ if DATABASE_URL:
         environ["UPSTREAM_BRANCH"] = config_dict["UPSTREAM_BRANCH"]
     conn.close()
 
-UPSTREAM_REPO = environ.get("UPSTREAM_REPO", "")
+UPSTREAM_REPO = environ.get("UPSTREAM_REPO", "https://github.com/Hrishi2861/Aeon-Modified.git")
 if len(UPSTREAM_REPO) == 0:
     UPSTREAM_REPO = "https://github.com/Hrishi2861/Aeon-Modified.git"
 
-UPSTREAM_BRANCH = environ.get("UPSTREAM_BRANCH", "")
+UPSTREAM_BRANCH = environ.get("UPSTREAM_BRANCH", "upstream")
 if len(UPSTREAM_BRANCH) == 0:
     UPSTREAM_BRANCH = "upstream"
 
